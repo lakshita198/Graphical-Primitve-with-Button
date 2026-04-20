@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F8FC"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:paddingBottom="30dp">
+
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnCircle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Circ"
+            android:layout_margin="4dp"
+            android:backgroundTint="#4A90E2"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Sq"
+            android:layout_margin="4dp"
+            android:backgroundTint="#50C878"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnRectangle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Rect"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F5A623"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnLine"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Line"
+            android:layout_margin="4dp"
+            android:backgroundTint="#E94E77"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="18dp">
+
+        <Button
+            android:id="@+id/btnOval"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Oval"
+            android:layout_margin="4dp"
+            android:backgroundTint="#BD10E0"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnTriangle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Tri"
+            android:layout_margin="4dp"
+            android:backgroundTint="#9013FE"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnStar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Star"
+            android:layout_margin="4dp"
+            android:backgroundTint="#417505"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Voice"
+            android:layout_margin="4dp"
+            android:backgroundTint="#D0021B"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- ================= DROPDOWN ================= -->
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"/>
+
+
+    <!-- ================= CANVAS AREA ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <!-- Bigger Shadow Container -->
+        <FrameLayout
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:background="#E3F2FD"
+            android:elevation="18dp"
+            android:padding="30dp">
+
+            <!-- Shape Appears Here -->
+            <View
+                android:id="@+id/shapeView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- ================= FOOTER ================= -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by Lakshita Rakhehca"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"/>
+
+</LinearLayout>
